@@ -1,0 +1,135 @@
+.sectionWrap5 {
+    width : 100%;
+    height : 100vh;
+    position : relative;
+}
+.sectionWrap5 h1 {
+    width : 100%;
+    height : 100px;
+    line-height : 100px;
+    color : #2ea;
+    text-align : center;
+    font-size : 60px;
+    top : 50px;
+    position : relative;
+}
+.contact {
+    position : relative;
+    top : 100px;
+    display : flex;
+    flex-flow : column wrap;
+    align-items: center;
+    
+}
+.contact p {
+    font-size : 24px;
+    line-height : 120px;
+    font-family: 'Pretendard';
+}
+.contact span {
+    margin-left : 5px;
+}
+.contact a {
+    display : inline-block;
+    transition : .5s;
+}
+.contact a:hover {
+    color : #2ea;
+}
+
+.contain {
+    margin-top : 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  
+  }
+  .contain svg {
+    width : 600px;
+    height : 400px;
+  }
+  svg text { 
+    font-family: 'Pretendard', sans-serif;
+    font-size: 6rem; 
+    stroke-width: 3px; 
+    stroke: #fff;
+    fill: transparent;
+    stroke-dashoffset: 750; 
+    stroke-dasharray: 750; 
+    text-shadow : 0 0 10px #fff;
+  }
+  .txt {
+    animation: stroke 3.5s .5s linear;
+    animation-fill-mode: forwards;
+  }
+  @keyframes stroke { 
+    0% { 
+      stroke-dashoffset: 750; 
+    } 
+    70% {
+      fill: #fff;
+    }
+    100% { 
+      stroke-dashoffset: 0; 
+      fill: #fff;
+    } 
+  }
+
+footer {
+    width : 100%;
+    height : 50px;
+    display : flex;
+    align-items: center;
+    justify-content: center;
+    position : absolute;
+    bottom : 0;
+    left : 0;
+}
+footer p {
+    margin-left : 6px;
+}
+
+@media screen and (max-width : 1024px) {
+    .sectionWrap5 h1 {
+        font-size : 42px;
+    }
+    .contact p {
+        font-size : 22px;
+    }
+    .contact span {
+        font-size : 22px;
+    }
+    .contact a {
+        font-size : 22px;
+    }
+    .contain svg {
+        width : 400px;
+        height : 400px;
+    }
+}
+@media screen and (max-width : 1024px) {
+    .contact p {
+        font-size : 18px;
+    }
+    .contact span {
+        font-size : 18px;
+    }
+    .contact a {
+        font-size : 18px;
+    }
+}
+@media screen and (max-width : 500px) { 
+    .contact p {
+        font-size : 14px;
+    }
+    .contact span {
+        font-size : 14px;
+    }
+    .contact a {
+        font-size : 14px;
+    }
+    .contain svg {
+        width : 250px;
+        height : 400px;
+    }
+}

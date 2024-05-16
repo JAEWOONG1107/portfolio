@@ -1,0 +1,138 @@
+.sectionWrap3 {
+    width : 100%;
+    height : 100vh;
+    position : relative;
+}
+.sectionWrap3 h1 {
+    width : 100%;
+    height : 100px;
+    line-height : 100px;
+    color : #2ea;
+    text-align : center;
+    font-size : 60px;
+    top : 50px;
+    position : relative;
+}
+.skill {
+    position : relative;
+    top : 50px;
+    width : 100%;
+    height : calc(100% - 150px);
+    display : flex;
+    flex-flow : row wrap;
+    justify-content: center;
+    gap : 10px;
+    padding : 0 50px;
+}
+.skillCircle {
+    width : 24%;
+    position : relative;
+}
+.skillCircle img {
+    width : 25%;
+    position : absolute;
+    top : 50%;
+    left: 50%;
+    transform : translate(-50%, -50%);
+}
+.skillCircle svg {
+    width : 60%;
+    position : absolute;
+    top : 50%;
+    left : 50%;
+    transform : translate(-50%, -50%) rotate(-90deg);
+    z-index : 10;
+}
+.circleBar {
+    stroke-width : 10;
+    stop-color : #000;
+    fill : transparent;
+    stroke : #333;
+    stroke-dasharray: 502;
+    stroke-dashoffset: -1;
+    stroke-linecap: round;
+    animation : circle 1s linear forwards;
+}
+.percentage {
+    text-align: center;
+    position : absolute;
+    left : 50%;
+    top : 85%;
+    z-index : 10;
+    transform : translateX(-50%);
+    text-shadow : 0 0 10px #000;
+}
+.skillName {
+    position : absolute;
+    left : 50%;
+    transform : translateX(-50%);
+    top : 10%;
+    z-index : 10;
+}
+
+.path {
+    stroke-width : 10;
+    stroke : #2ea;
+    fill : transparent;
+    stroke-dasharray: 502;
+    stroke-dashoffset: 502;
+    stroke-linecap: round;
+}
+.path1 {animation : path1 1s .5s linear forwards;}
+.path2 {animation : path2 1s .5s linear forwards;}
+.path3 {animation : path3 1s .5s linear forwards;}
+
+@keyframes path1 {
+    100% {stroke-dashoffset: 50;}
+}
+@keyframes path2 {
+    100% {stroke-dashoffset: 125;}
+}
+@keyframes path3 {
+    100% {stroke-dashoffset: 251;}
+}
+
+
+@media screen and (max-width : 1024px) {
+    .sectionWrap3 h1 {
+        font-size : 42px;
+    }
+    .percentage {
+        top : 70%;
+    }
+    .skillCircle svg {
+        width : 70%;
+    }
+}
+@media screen and (max-width : 768px) {
+    .skill {
+        justify-content: space-between;
+    }
+    .skillCircle svg {
+        width : 90%;
+    }
+    
+    .skillCircle img  {
+        width : 40%;
+    }
+    .percentage {
+        top : 75%;
+    }
+    .skillName {
+        font-size : 16px;
+    }
+}
+@media screen and (max-width : 500px) {
+    .skillCircle svg {
+        width : 100%;
+    }
+    .skillCircle img  {
+        width : 40%;
+    }
+    .percentage {
+        font-size : 10px;
+    }
+    .skillName {
+        font-size : 10px;
+    }
+}
