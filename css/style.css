@@ -13,11 +13,21 @@ body {
     0% {background-position: 0% 50%;}
     100% {background-position: 100% 50%;}
 }
-/* canvas{
-	position:absolute;
-	top:0;
-	left:0;
-} */
+
+/* particle */
+#particles-js {
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    background-image: url("");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: 50% 50%;
+}
+canvas {
+    display : block;
+    vertical-align : bottom;
+}
 
 /* header */
 header {

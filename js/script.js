@@ -33,21 +33,6 @@ $(function () {
     });
 })
 
-// header
-// const headerMenu = document.querySelectorAll('#menu li');
-
-// for (let i = 0; i < headerMenu.length; i++) {
-//   headerMenu[i].addEventListener('click', function() {
-//     headerMenu[0].classList.remove('active');
-//     headerMenu[1].classList.remove('active');
-//     headerMenu[2].classList.remove('active');
-//     headerMenu[3].classList.remove('active');
-//     headerMenu[4].classList.remove('active');
-//     headerMenu[i].classList.add('active');
-//   });
-// }
-
-
 // typed js
 var typed = new Typed('.mainText', {
     strings : ['Web Publisher', 'Seo Jaewoong', 'Portfolio'],

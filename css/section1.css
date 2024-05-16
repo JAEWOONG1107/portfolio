@@ -7,7 +7,7 @@
     height : 100vh;
 }
 .mainText {
-    font-size : 100px;
+    font-size : 150px;
     color : #2ea;    
     display : inline-block;
     font-family : 'Pretendard';
@@ -15,7 +15,7 @@
 }
 .typed-cursor {
     display : inline-block;
-    font-size : 72px;
+    font-size : 120px;
     font-weight : lighter;
 }
 
