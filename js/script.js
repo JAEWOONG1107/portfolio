@@ -56,7 +56,7 @@ var typed = new Typed('.mainText', {
 var swiper = new Swiper(".mySwiper", {
     slidesPerView: 1,
     spaceBetween: 50,
-    speed : 800,
+    speed : 500,
     loop: true,
     pagination: {
       el: ".swiper-pagination",
@@ -80,11 +80,11 @@ document.querySelectorAll('.mText').forEach((el)=>{
 let observerH1 = new IntersectionObserver((k) => {
   k.forEach((box)=>{
       if (box.isIntersecting) {
-        box.target.classList.add('animate__animated', 'animate__fadeInLeft');
+        box.target.classList.add('animate__animated', 'animate__fadeInUp');
         box.target.style.opacity = 1;
       }
       else {
-        box.target.classList.remove('animate__animated', 'animate__fadeInLeft');
+        box.target.classList.remove('animate__animated', 'animate__fadeInUp');
         box.target.style.opacity = 0;
       }
   });
@@ -113,7 +113,7 @@ let AboutI = document.querySelector('.aboutImg');
 observerAboutI.observe(AboutI);
 
 // about text animation
-let numT = 0.6;
+let numT = 0.1;
 document.querySelectorAll('.aboutText').forEach((el)=>{
     el.style.setProperty('animation-delay', `${numT}s`);
 })
@@ -190,6 +190,11 @@ let circle3 = document.querySelector('.ani3');
 observer3.observe(circle3);
 
 // projectImg
+let numP = 0.5;
+document.querySelectorAll('.proImg').forEach((el)=>{
+    el.style.setProperty('animation-delay', `${numP}s`);
+})
+
 let observerP = new IntersectionObserver((e) => {
   e.forEach((box)=>{
       if (box.isIntersecting) {
