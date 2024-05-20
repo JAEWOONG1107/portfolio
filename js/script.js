@@ -33,11 +33,21 @@ $(function () {
     });
 })
 
+// main text animation
+const myText = new SplitType("#myText");
+
+gsap.to('.char', {
+    y : 0,
+    stagger : 0.05,
+    delay : 0.2,
+    duration: .1
+});
+
 // typed js
 var typed = new Typed('.mainText', {
-    strings : ['Web Publisher', 'Seo Jaewoong', 'Portfolio'],
-    typeSpeed : 100,
-    backSpeed : 100,
+    strings : ['Thank You'],
+    typeSpeed : 150,
+    backSpeed : 150,
     backDelay : 1000,
     loop : true
 });
@@ -63,7 +73,7 @@ var swiper = new Swiper(".mySwiper", {
 
 // h1 animation
 let numH = 0.4;
-document.querySelectorAll('section > div > h1').forEach((el)=>{
+document.querySelectorAll('.mText').forEach((el)=>{
     el.style.setProperty('animation-delay', `${numH}s`);
 })
 
@@ -80,7 +90,7 @@ let observerH1 = new IntersectionObserver((k) => {
   });
 })
 
-let H1 = document.querySelectorAll('section > div > h1');
+let H1 = document.querySelectorAll('.mText');
 for (let i=0; i<H1.length; i++) {
   observerH1.observe(H1[i]);
 }

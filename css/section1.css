@@ -5,48 +5,69 @@
     align-items : center;
     width : 100%;
     height : 100vh;
+    position : relative;
 }
-.mainText {
-    font-size : 150px;
-    color : #2ea;    
-    display : inline-block;
-    font-family : 'Pretendard';
-    font-weight : bold;
-    background-clip: text;
-    color: transparent;
-    background-image: linear-gradient(180deg, #2ea, #46eeb6 20%, #94eacd 40%, #ccece1 60%, #d7ece5 80%, #fff);
-    background-size: 100% 300%;
-    background-position-y: 0;
-    animation: gradient 2s linear infinite alternate;
+.sectionWrap h1 {
+    text-align : left;
+    color : #fff;
+    font-size : 110px;
+    line-height : 110px;
+    clip-path: polygon(0 100%, 100% 100%, 100% 0, 0 0);
+    display : inline;
+    position : absolute;
+    bottom : 60px;
+    left : 80px;
+    font-family : 'cafe24';
+    transition : .5s;
 }
-@keyframes gradient {
-    0% {
-        background-position-y: 0;
-    }
-    100% {
-        background-position-y: 100%;
-    }
+.sectionWrap h1 .middleText {
+    margin : 50px 0;
+    font-size : 130px;
+    color : #2ea;
 }
 
-.typed-cursor {
-    display : inline-block;
-    font-size : 120px;
-    font-weight : lighter;
+.char {
+    transform: translateY(445px);
+    transition: transform .5s;
 }
 
-@media screen and (max-width : 1024px) {
-    .mainText {
-        font-size : 72px;
+@media screen and (max-width : 1200px) {
+    .sectionWrap h1 {
+        font-size : 80px;
+        line-height : 80px;
     }
-    .typed-cursor {
+    .sectionWrap h1 .middleText {
+        font-size : 100px;
+        margin : 40px 0;
+    }
+}
+@media screen and (max-width : 950px) {
+    .sectionWrap h1 {
+        width : 100%;
+        bottom : 50%;
+        transform : translateY(50%);
         font-size : 50px;
+    }
+    .sectionWrap h1 .middleText {
+        font-size : 72px;
+        margin : 30px 0;
     }
 }
 @media screen and (max-width : 768px) {
-    .mainText {
-        font-size : 50px;
+    .sectionWrap h1 {
+        font-size : 42px;
     }
-    .typed-cursor {
-        font-size : 36px;
+    .sectionWrap h1 .middleText {
+        font-size : 50px;
+        margin : 25px 0;
     }
 }
+@media screen and (max-width : 500px) {
+    .sectionWrap h1 {
+        font-size : 32px;
+    }
+    .sectionWrap h1 .middleText {
+        font-size : 40px;
+        margin : 15px 0;
+    }
+} 

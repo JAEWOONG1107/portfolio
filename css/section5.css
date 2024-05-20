@@ -44,12 +44,33 @@
     line-height : calc(100vh - 610px);
     text-align : center;
     font-size : 48px;
-    text-shadow : 0 0 3px #fff;
-    animation : textGlow 1s infinite alternate linear;
 }
 
-@keyframes textGlow {
-    to {text-shadow : 0 0 10px #fff;}
+.mainText {
+    color : #2ea;
+    display : inline-block;
+    font-family : 'Pretendard';
+    font-weight : bold;
+    background-clip: text;
+    color: transparent;
+    background-image: linear-gradient(180deg, #2ea, #46eeb6 20%, #94eacd 40%, #ccece1 60%, #d7ece5 80%, #fff);
+    background-size: 100% 300%;
+    background-position-y: 0;
+    animation: gradient 2s linear infinite alternate;
+}
+@keyframes gradient {
+    0% {
+        background-position-y: 0;
+    }
+    100% {
+        background-position-y: 100%;
+    }
+}
+
+.typed-cursor {
+    display : inline-block;
+    font-size : 40px;
+    font-weight : lighter;
 }
 
 footer {
@@ -79,9 +100,14 @@ footer p {
     .contact a {
         font-size : 22px;
     }
-    .contain svg {
-        width : 400px;
-        height : 400px;
+    .mainText {
+        font-size : 40px;
+    }
+    .typed-cursor {
+        font-size : 36px;
+    }
+    footer p {
+        font-size : 20px;
     }
 }
 @media screen and (max-width : 1024px) {
@@ -94,6 +120,9 @@ footer p {
     .contact a {
         font-size : 18px;
     }
+    footer p {
+        font-size : 16px;
+    }
 }
 @media screen and (max-width : 500px) { 
     .contact p {
@@ -105,8 +134,7 @@ footer p {
     .contact a {
         font-size : 14px;
     }
-    .contain svg {
-        width : 250px;
-        height : 400px;
+    footer p {
+        font-size : 12px;
     }
 }
