@@ -1,15 +1,14 @@
 /* body */
 body {
-    /* background-color: #2b2b2b; */
     background: linear-gradient(-45deg, #2b2b2b, #1b1b1b, #2b2b2b);
     background-size: 200% 200%;
-    animation: gradient 5s ease infinite alternate;
+    animation: gradientB 5s ease infinite alternate;
     font-family: 'Pretendard';
     color: #fff;
     min-width : 360px;
-    overflow:hidden;
+    overflow : hidden;
 }
-@keyframes gradient {
+@keyframes gradientB {
     0% {background-position: 0% 50%;}
     100% {background-position: 100% 50%;}
 }

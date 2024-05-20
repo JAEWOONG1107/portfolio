@@ -61,11 +61,6 @@ var swiper = new Swiper(".mySwiper", {
     },
 });
 
-// iframe
-newMockFrame({
-    dark : true,
-});
-
 // h1 animation
 let numH = 0.4;
 document.querySelectorAll('section > div > h1').forEach((el)=>{

@@ -12,7 +12,22 @@
     display : inline-block;
     font-family : 'Pretendard';
     font-weight : bold;
+    background-clip: text;
+    color: transparent;
+    background-image: linear-gradient(180deg, #2ea, #46eeb6 20%, #94eacd 40%, #ccece1 60%, #d7ece5 80%, #fff);
+    background-size: 100% 300%;
+    background-position-y: 0;
+    animation: gradient 2s linear infinite alternate;
 }
+@keyframes gradient {
+    0% {
+        background-position-y: 0;
+    }
+    100% {
+        background-position-y: 100%;
+    }
+}
+
 .typed-cursor {
     display : inline-block;
     font-size : 120px;
