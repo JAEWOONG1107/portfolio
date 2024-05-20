@@ -7,16 +7,11 @@
     width : 100%;
     height : 100px;
     line-height : 100px;
-    background-clip: text;
-    color: transparent;
-    background-image: linear-gradient(180deg, #2ea, #46eeb6 20%, #94eacd 40%, #ccece1 60%, #d7ece5 80%, #fff);
-    background-size: 100% 300%;
-    background-position-y: 0;
-    animation: gradient 2s linear infinite alternate;
     text-align : center;
     font-size : 60px;
     top : 50px;
     position : relative;
+    color : #2ea;
 }
 .skill {
     position : relative;
