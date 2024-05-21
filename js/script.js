@@ -273,12 +273,32 @@ for (let i=0; i<zoomBtn.length; i++) {
   });
 
   closeBtn[i].addEventListener('click', function() {
-    document.querySelector('header').style.display = 'flex';
-    document.querySelector('.swiper-pagination').style.display = "flex";
+    if (window.innerWidth <= "768") {
+      document.querySelector('header').style.display = 'flex';
+      document.querySelector('.swiper-pagination').style.display = "flex";
+      document.querySelector('.swiper-button-prev').style.display = "none";
+      document.querySelector('.swiper-button-next').style.display = "none";
+    }
+    else {
+      document.querySelector('header').style.display = 'flex';
+      document.querySelector('.swiper-pagination').style.display = "flex";
+      document.querySelector('.swiper-button-prev').style.display = "block";
+      document.querySelector('.swiper-button-next').style.display = "block";
+    }
+  });
+}
+
+// 반응형 슬라이드 버튼 조정
+window.onresize = function() {
+  let innerWidth = window.innerWidth;
+  if (innerWidth <= "768") {
+    document.querySelector('.swiper-button-prev').style.display = "none";
+    document.querySelector('.swiper-button-next').style.display = "none";
+  }
+  else {
     document.querySelector('.swiper-button-prev').style.display = "block";
     document.querySelector('.swiper-button-next').style.display = "block";
-
-  });
+  }
 }
 
 for (let i=0; i<proThumb.length; i++) {

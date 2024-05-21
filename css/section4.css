@@ -217,9 +217,6 @@
         width: 90%;
         height : 30%;
     }
-    .swiper-button-next, .swiper-button-prev {
-        display : none;
-    }
     .proInner {
         height : 75%;
     }
