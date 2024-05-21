@@ -106,7 +106,7 @@ footer p {
     .typed-cursor {
         font-size : 36px;
     }
-    footer p {
+    footer p, footer i {
         font-size : 20px;
     }
 }
@@ -120,7 +120,7 @@ footer p {
     .contact a {
         font-size : 18px;
     }
-    footer p {
+    footer p, footer i {
         font-size : 16px;
     }
 }
@@ -134,7 +134,7 @@ footer p {
     .contact a {
         font-size : 14px;
     }
-    footer p {
+    footer p, footer i {
         font-size : 12px;
     }
 }

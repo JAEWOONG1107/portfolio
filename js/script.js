@@ -8,6 +8,15 @@ $(function () {
           navigation : false,
     });
 
+    // 반응형 헤더 메뉴
+    $('.smallMenu').click(function() {
+      $(this).siblings('.sMenuBox').stop().fadeIn(800);
+
+      $('.smallMenuIn a, .sMenuBox i').click(function() {
+        $(this).parents('.sMenuBox').stop().fadeOut(800);
+      });
+    });
+
     // 프로젝트 이미지 메뉴
     $('.proImg').mouseover(function() {
       $(this).find('.blackBox').stop().fadeIn();
