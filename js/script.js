@@ -195,8 +195,10 @@ let observer3 = new IntersectionObserver((e) => {
   });
 })
 
-let circle3 = document.querySelector('.ani3');
-observer3.observe(circle3);
+let circle3 = document.querySelectorAll('.ani3');
+for (let i=0; i<circle3.length; i++) {
+  observer3.observe(circle3[i]);
+}
 
 // projectImg
 let numP = 0.5;

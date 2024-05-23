@@ -25,15 +25,11 @@
     padding : 0 50px;
 }
 .skillCircle {
-    width : 24%;
+    width : 19%;
     position : relative;
 }
 .skillCircle img {
-    width : 25%;
-    position : absolute;
-    top : 50%;
-    left: 50%;
-    transform : translate(-50%, -50%);
+    width : 20px;
 }
 .skillCircle svg {
     width : 60%;
@@ -55,19 +51,25 @@
 }
 .percentage {
     text-align: center;
-    position : absolute;
-    left : 50%;
-    top : 85%;
+    width : 100%;
     z-index : 10;
-    transform : translateX(-50%);
     text-shadow : 0 0 10px #000;
+    transition : .5s;
+    position : absolute;
+    font-size : 22px;
+    top : 50%;
+    transform : translateY(-50%);
 }
 .skillName {
-    position : absolute;
-    left : 50%;
-    transform : translateX(-50%);
-    top : 10%;
+    width : 100%;
+    display : flex; 
+    justify-content: center;
+    align-items: center;
     z-index : 10;
+    transition : .5s;
+    position : relative;
+    top : 15%;
+    gap : 4px;
 }
 
 .path {
@@ -92,16 +94,31 @@
     100% {stroke-dashoffset: 205;}
 }
 
-
+@media screen and (max-width : 1500px) {
+    .skillName {
+        top : 14%;
+        font-size : 18px;
+    }
+    .skillCircle svg {
+        width : 80%;
+    }
+}
 @media screen and (max-width : 1024px) {
     .sectionWrap3 h1 {
         font-size : 42px;
     }
-    .percentage {
-        top : 70%;
+    .skillCircle {
+        width : 30%;
     }
     .skillCircle svg {
         width : 70%;
+    }
+    .skillName {
+        top : 3%;
+        font-size : 18px;
+    }
+    .percentage {
+        font-size : 18px;
     }
 }
 @media screen and (max-width : 768px) {
@@ -109,30 +126,27 @@
         justify-content: space-between;
     }
     .skillCircle svg {
-        width : 90%;
-    }
-    
-    .skillCircle img  {
-        width : 40%;
+        width : 80%;
     }
     .percentage {
-        top : 75%;
+        font-size : 16px;
     }
     .skillName {
-        font-size : 16px;
+        font-size : 14px;
     }
 }
 @media screen and (max-width : 500px) {
     .skillCircle svg {
         width : 100%;
     }
-    .skillCircle img  {
-        width : 40%;
+    .skillCircle img {
+        width : 15px;
     }
     .percentage {
         font-size : 10px;
     }
     .skillName {
+        top : 20%;
         font-size : 10px;
     }
 }
