@@ -54,6 +54,7 @@
     border : 2px solid #2ea;
     background : #2b2b2b;
     bottom : 10px;
+    left : 0;
     border-radius : 5px;
     transition : .5s;
 }
